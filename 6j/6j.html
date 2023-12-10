@@ -3,17 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>6h.html</title>
+  <title>6j.html</title>
 </head>
 <body>
   <script>
     let random = Math.random();
     let result = '';
+    /*
     if (random > 0.5){
       result = 'heads';
     } else {
       result = 'tails';
     }
+    */
+   random > 0.5 ? result = 'heads' : result = 'tails';
+
+    
+    let guess = 'heads';
+    /*
+    if (result == guess){
+      console.log('You win!');
+    } else{
+      console.log('You lose!');
+    }
+    */
+
+    result == guess ? console.log('You win!') : console.log('You lose!');
+   
   </script>
 </body>
 </html>
